@@ -8,5 +8,6 @@
 </head>
 <body>
    <h2>Đây là trang đăng kí</h2> 
+   <button>Đăng kí</button>
 </body>
 </html>
