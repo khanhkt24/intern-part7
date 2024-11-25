@@ -83,14 +83,7 @@ class HomeController extends Controller
         $bill->bill_status = 'completed';
         $bill->save();
 
-        BillHistory::create([
-            'bill_id' => $bill->id,
-            'by_user' => Auth::id(),
-            'from_status' => 'delivered',
-            'to_status' => 'completed',
-            'note' => 'Đơn hàng đã được hoàn thành.',
-            'at_datetime' => now(),
-        ]);
+
 
         // Gửi email thông báo cho khách hàng
         $customerEmail = $bill->user->email;
