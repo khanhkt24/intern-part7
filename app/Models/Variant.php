@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\client\Cart;
+use App\Models\Cart;
 use App\Models\ProductSize;
 
 class Variant extends Model
