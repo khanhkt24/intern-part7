@@ -84,7 +84,6 @@ class HomeController extends Controller
         $bill->save();
 
 
-
         // Gửi email thông báo cho khách hàng
         $customerEmail = $bill->user->email;
         Mail::to($customerEmail)->send(new OrderCompletedMail($bill));
