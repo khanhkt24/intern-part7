@@ -20,9 +20,9 @@ class OrderStatusUpdatedMail extends Mailable
 
     public function __construct(Bill $bill, $note = null, $atDatetime = null)
     {
-        $this->bill = $bill; 
+        $this->bill = $bill;
         $this->note = $note;
-        $this->atDatetime = $atDatetime; 
+        $this->atDatetime = $atDatetime;
     }
 
 
@@ -42,9 +42,9 @@ class OrderStatusUpdatedMail extends Mailable
     public function content()
     {
         return new Content(
-            view: 'emails.order_status_updated', 
+            view: 'emails.order_status_updated',
         );
-    }
+    }    
 
     /**
      * Get the attachments for the message.

@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\client\ProductController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProductSizeController;
+use App\Http\Controllers\VariantController;
+use App\Http\Middleware\CheckRole;
 use Illuminate\Support\Facades\Route;
 
 /*
