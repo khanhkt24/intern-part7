@@ -25,3 +25,7 @@ Route::get('/register', function () {
     return view('welcome');
 });
 
+Route::get('/list-product', function () {
+    return view('welcome');
+});
+
