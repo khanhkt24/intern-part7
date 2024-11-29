@@ -32,3 +32,7 @@ Route::get('/list-product', function () {
 Route::get('/add-product', function () {
     return view('welcome');
 });
+
+Route::get('/update-product', function () {
+    return view('welcome');
+});
